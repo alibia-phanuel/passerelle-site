@@ -59,7 +59,7 @@ const ContentHero = () => {
             </div>
           </motion.div>
         </div>
-        <div className="max-lg:hidden absolute right-0 top-0">
+        <div className="max-lg:hidden absolute right-0 top-0 overflow-hidden">
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}

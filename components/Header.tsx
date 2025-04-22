@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -12,7 +12,14 @@ const Header = () => {
     <div className="w-full flex justify-center items-center ">
       <div className="w-full flex items-center justify-between px-6 py-4 bg-transparent container">
         {/* Logo */}
-        <div className="text-2xl font-bold text-white ">MyLogo</div>
+        <div className="text-2xl font-bold text-white ">
+          <Image
+            src="/images/logo.png"
+            width={100}
+            height={100}
+            alt="Picture of the author"
+          />
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6 items-center text-white text-700 font-medium">

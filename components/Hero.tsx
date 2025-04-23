@@ -4,7 +4,7 @@ const Hero = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div className="h-[80vh] bg-[#00B8D9] relative max-md:h-auto pb-8 ">
+    <div className="h-[80vh] bg-[#212121] relative max-md:h-auto pb-8 ">
       {children}
     </div>
   );

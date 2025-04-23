@@ -5,7 +5,7 @@ const Testimonials = () => {
     <div className=" min-h-[60vh]  flex justify-center overflow-hidden p-4">
       <div className="container flex justify-between items-center max-md:flex-wrap max-md:flex-col max-md:justify-center">
         <div>
-          <h1 className="text-[#034D82] font-bold text-[36px] my-[24px] max-md:text-center">
+          <h1 className="text-[#fad41a] font-bold text-[36px] my-[24px] max-md:text-center">
             Powering the growth of <br /> 100+ business & retailers in ,<br />{" "}
             Indonesia.
           </h1>

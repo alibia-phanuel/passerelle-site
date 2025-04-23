@@ -47,7 +47,7 @@ const ContentHero = () => {
           >
             <Button
               variant="outline"
-              className="py-[18px] px-[36px] text-[#00A8DB]"
+              className="py-[18px] px-[36px] text-[#212121]"
             >
               See how it works
             </Button>
@@ -59,7 +59,7 @@ const ContentHero = () => {
             </div>
           </motion.div>
         </div>
-        <div className="max-lg:hidden absolute right-0 top-0 overflow-hidden">
+        <div className="max-lg:hidden absolute right-0 top-0 overflow-hidden  h-full">
           <motion.div
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}

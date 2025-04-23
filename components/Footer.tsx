@@ -107,7 +107,7 @@ const Footer = () => {
         transition={{ duration: 0.6 }}
         className="w-full flex flex-col items-center gap-4 my-[80px]"
       >
-        <div className="w-[56px] h-[56px] bg-[#005490] rounded-full flex justify-center items-center">
+        <div className="w-[56px] h-[56px] bg-[#cfc31d] rounded-full flex justify-center items-center">
           <IoMdHeart className="text-[#FFFFFF] text-[24px]" />
         </div>
         <div className="text-[#FFFFFF] text-[16px] font-bold text-center">

@@ -17,7 +17,7 @@ const Brand = () => {
   return (
     <div className="min-h-[360px] max-md:h-auto flex justify-center overflow-hidden p-4">
       <motion.div
-        className="container px-[91px] rounded-lg flex min-h-[360px] justify-between bg-gradient-to-r from-[#01B8D9] to-[#24CEED] items-center max-md:flex-wrap max-md:flex-col max-md:justify-center"
+        className="container px-[91px] rounded-lg flex min-h-[360px] justify-between bg-gradient-to-r from-[#292c2c] to-[#edea24bf] items-center max-md:flex-wrap max-md:flex-col max-md:justify-center"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.3 }}
@@ -32,7 +32,7 @@ const Brand = () => {
       >
         <div className="flex flex-col max-md:justify-center max-md:items-center">
           <motion.h1
-            className="font-bold text-[#FFFFFF] text-[36px] max-md:text-center"
+            className="font-bold text-[#fad41a] text-[36px] max-md:text-center"
             variants={{
               hidden: { opacity: 0, y: -30 },
               show: { opacity: 1, y: 0 },
@@ -109,7 +109,7 @@ const Brand = () => {
         >
           <Button
             variant="outline"
-            className="py-[18px] text-[#00B8D9] px-[32px] bg-white cursor-pointer mb-[34px]"
+            className="py-[18px] text-[#070707] px-[32px] bg-white cursor-pointer mb-[34px]"
           >
             Get your trial now
           </Button>

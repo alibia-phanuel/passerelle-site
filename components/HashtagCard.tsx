@@ -30,7 +30,7 @@ export const HashtagCard = ({
       >
         <FaHashtag />
       </div>
-      <h1 className="font-bold text-[#034D82] text-[20px] my-[32px]">
+      <h1 className="font-bold text-[#fad41a] text-[20px] my-[32px]">
         {title}
       </h1>
       <p className="text-[15px] text-[#8EA9C1] whitespace-pre-line">

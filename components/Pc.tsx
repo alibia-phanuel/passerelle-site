@@ -31,7 +31,7 @@ const Pc = () => {
           transition={{ duration: 1 }}
         >
           <motion.h1
-            className="text-[#034D82] font-bold text-[36px]"
+            className="text-[#fad41a] font-bold text-[36px]"
             variants={{
               hidden: { opacity: 0, y: 20 },
               show: { opacity: 1, y: 0 },
@@ -71,7 +71,7 @@ const Pc = () => {
                 "Others benefit",
               ].map((text, index) => (
                 <li key={index} className="flex items-center gap-3 mb-2">
-                  <IoMdCheckmarkCircleOutline className="text-[#18B7E7]" />
+                  <IoMdCheckmarkCircleOutline className="text-[#fad41a]" />
                   <span className="text-[#90A3B4]">{text}</span>
                 </li>
               ))}
@@ -79,7 +79,7 @@ const Pc = () => {
           </motion.div>
 
           <motion.p
-            className="flex items-center text-[#04AADD] py-2 gap-2 cursor-pointer max-md:w-full max-md:justify-center"
+            className="flex items-center text-[#fad41a] py-2 gap-2 cursor-pointer max-md:w-full max-md:justify-center"
             variants={{
               hidden: { opacity: 0, x: -20 },
               show: { opacity: 1, x: 0 },

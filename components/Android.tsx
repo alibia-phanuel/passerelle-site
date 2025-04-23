@@ -56,7 +56,7 @@ const Android = () => {
           transition={{ duration: 1, delay: 0.8 }}
           className="relative max-md:w-full max-md:text-center max-md:my-4"
         >
-          <h1 className="text-[#034D82] font-bold text-[36px]">
+          <h1 className="text-[#fad41a] font-bold text-[36px]">
             Measure Impressions <br />
             and Reach Post
           </h1>
@@ -66,7 +66,7 @@ const Android = () => {
             <br />
             impressions to give you the insights.
           </p>
-          <p className="flex items-center text-[#04AADD]  py-2 gap-2 cursor-pointer max-md:w-full max-md:justify-center">
+          <p className="flex items-center text-[#fad41a]  py-2 gap-2 cursor-pointer max-md:w-full max-md:justify-center">
             <span>Learn about graphs</span>
             <CgArrowLongRight className="relative top-0.5" />
           </p>

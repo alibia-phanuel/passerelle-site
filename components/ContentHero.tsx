@@ -17,9 +17,10 @@ const ContentHero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative font-bold z-10 text-[64px]"
           >
-            We help you <br />
-            to grow your business <br />
-            faster
+            Accélérez votre succès <br />
+            avec nos services
+            <br />
+            complets
             <Image
               src="/images/line.png"
               alt="Picture of the author"
@@ -34,9 +35,11 @@ const ContentHero = () => {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="my-[32px]"
           >
-            Ehya is the Instagram analytics platform teams use to stay <br />
-            focused on the goals, track engagement for report your <br />
-            business.
+            La Passerelle accompagne les entreprises dans leur croissance grâce{" "}
+            <br />
+            à des services innovants : application mobile, production <br />
+            artistique, e-shop, internet haut débit, location de véhicules, et{" "}
+            bien plus.
           </motion.p>
 
           <motion.div
@@ -49,11 +52,11 @@ const ContentHero = () => {
               variant="outline"
               className="py-[18px] px-[36px] text-[#212121]"
             >
-              See how it works
+              Voir comment ça marche
             </Button>
             <div className="text-white flex items-center justify-center cursor-pointer">
               <Link href="/" className="flex items-center justify-center">
-                <p> Get a free demo </p>
+                <p>Obtenez une démo gratuite</p>
                 <IoIosArrowRoundForward className="text-white text-[30px]" />
               </Link>
             </div>

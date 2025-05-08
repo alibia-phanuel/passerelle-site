@@ -6,7 +6,10 @@ import { CgArrowLongRight } from "react-icons/cg";
 
 const Pc = () => {
   return (
-    <div className="min-h-screen flex justify-center items-center overflow-hidden">
+    <div
+      id="projets"
+      className="min-h-screen flex justify-center items-center overflow-hidden"
+    >
       <motion.div
         className="h-full gap-2 w-full max-md:flex-wrap flex justify-between items-center container p-4"
         initial="hidden"
@@ -38,8 +41,8 @@ const Pc = () => {
             }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            Schedule Your Post <br />
-            Whenever You Want
+            Vendez et achetez en ligne <br />
+            en toute simplicité
           </motion.h1>
 
           <motion.p
@@ -50,25 +53,29 @@ const Pc = () => {
             }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            Publish your content automatically to ensure that your content
+            Grâce à notre e-shop, développez votre activité <br />
+            commerciale ou trouvez les produits qu’il vous faut en quelques
+            clics. <br />
+            La Passerelle met à votre disposition une plateforme moderne, <br />
+            sécurisée et facile à utiliser, conçue pour booster vos ventes{" "}
             <br />
-            reaches the right people. Built-in features such as
+            et simplifier vos achats.
           </motion.p>
 
           <motion.div
-            className="flex  max-md:justify-center my-[32px]"
+            className="flex max-md:justify-center my-[32px]"
             variants={{
               hidden: { opacity: 0, y: 20 },
               show: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 1, delay: 0.6 }}
           >
-            <ul className=" max-md:flex max-md:flex-col max-md:justify-center">
+            <ul className="max-md:flex max-md:flex-col max-md:justify-center">
               {[
-                "Best Time to Post",
-                "Geolocation",
-                "User Tag",
-                "Others benefit",
+                "Accès rapide à tous les services",
+                "Suivi en temps réel des demandes",
+                "Interface simple et intuitive",
+                "Notifications personnalisées",
               ].map((text, index) => (
                 <li key={index} className="flex items-center gap-3 mb-2">
                   <IoMdCheckmarkCircleOutline className="text-[#fad41a]" />
@@ -86,7 +93,7 @@ const Pc = () => {
             }}
             transition={{ duration: 1, delay: 0.8 }}
           >
-            <span>Learn about scheduled post</span>
+            <span>🛍️ Explorer l’e-shop</span>
             <CgArrowLongRight className="relative top-0.5" />
           </motion.p>
         </motion.div>

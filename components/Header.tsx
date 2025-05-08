@@ -23,10 +23,10 @@ const Header = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-6 items-center text-white text-700 font-medium">
-          <Link href="/">Accueil</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/projets">Projets</Link>
-          <Link href="/contact">Contact</Link>
+          <a href="#accueil">Accueil</a>
+          <a href="#services">Services</a>
+          <a href="#projets">Projets</a>
+          <a href="#contact">Contact</a>
         </div>
 
         {/* Mobile Menu Button */}

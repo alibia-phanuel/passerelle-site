@@ -1,25 +1,35 @@
-// data/hashtagCards.ts
+import { MdOutlineWifi } from "react-icons/md";
+import { RiCarLine } from "react-icons/ri";
+import { MdCleaningServices } from "react-icons/md";
+import { FaUsersCog } from "react-icons/fa";
+
 export const hashtagCards = [
   {
     color: "bg-[#EF4444]",
-    title: "Hashtag Growth",
-    description: "Follow a hashtag growth \ntotal posts, videos and \nimages.",
+    icone: MdOutlineWifi,
+    title: "Internet Haut Débit",
+    description:
+      "Profitez d’une connexion rapide et stable grâce à notre service de fibre\noptique.",
   },
   {
     color: "bg-[#3B82F6]",
-    title: "Influencers by Hashtag",
+    icone: RiCarLine,
+    title: "Location & Vente de Véhicules",
     description:
-      "Identify the most \ninfluential people posting \nwith your hashtag.",
+      "Des véhicules fiables pour tous vos\nbesoins de déplacement, à court ou long terme.",
   },
   {
     color: "bg-[#F59E0B]",
-    title: "Most Influental Post",
+    icone: MdCleaningServices,
+    title: "Services d’Hygiène",
     description:
-      "See the most influential posts on hashtag you are following on.",
+      "Des équipes professionnelles pour assurer la propreté de vos espaces.",
   },
   {
     color: "bg-[#14B8A6]",
-    title: "Hashtag Location",
-    description: "Visualize where people are posting using your hashtag made.",
+    icone: FaUsersCog, // correction ici
+    title: "Placement de Personnel",
+    description:
+      "Mise à disposition de personnel qualifié pour tous types de missions.",
   },
 ];

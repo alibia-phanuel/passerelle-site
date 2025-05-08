@@ -11,7 +11,10 @@ const logos = [
 ];
 function Marques() {
   return (
-    <div className="flex justify-center items-center  py-[50px] overflow-hidden">
+    <div
+      id="services"
+      className="flex justify-center items-center  py-[50px] overflow-hidden"
+    >
       <div className="container flex flex-wrap justify-center md:justify-between items-center gap-6">
         {logos.map((src, index) => (
           <motion.div

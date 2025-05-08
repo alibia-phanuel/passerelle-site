@@ -57,17 +57,19 @@ const Android = () => {
           className="relative max-md:w-full max-md:text-center max-md:my-4"
         >
           <h1 className="text-[#fad41a] font-bold text-[36px]">
-            Measure Impressions <br />
-            and Reach Post
+            Gérez tous vos services <br />à portée de main
           </h1>
           <p className="mt-[24px] mb-[36px] text-[#90A3B4]">
-            Graphs displaying your performance for metrics like follower <br />
-            evolution, average engagement rate per post and reach and
-            <br />
-            impressions to give you the insights.
+            Avec La Passerelle App, accédez à l’ensemble de nos services où que
+            vous soyez. <br />
+            Suivez vos demandes en temps réel, explorez nos solutions comme la
+            location de <br /> véhicules, les services internet ou encore notre
+            e-shop. shop, <br />
+            le tout depuis une seule interface intuitive. Une seule application
+            pour une gestion <br /> simplifiée et centralisée.
           </p>
           <p className="flex items-center text-[#fad41a]  py-2 gap-2 cursor-pointer max-md:w-full max-md:justify-center">
-            <span>Learn about graphs</span>
+            <span>📊 Découvrir l’application</span>
             <CgArrowLongRight className="relative top-0.5" />
           </p>
         </motion.div>

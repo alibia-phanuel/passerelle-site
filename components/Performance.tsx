@@ -8,11 +8,12 @@ const Performance = () => {
       <div className="container h-full">
         <div className="mt-[80px] mb-[76px]">
           <h1 className="text-center text-[#fad41a] font-bold text-[36px]">
-            Track any hashtag(s) Performance
+            Des solutions adaptées à chaque besoin
           </h1>
           <p className="text-center text-[#fff] my-[24px]">
-            Don’t waste time on search manual tasks. Let Automation do it for
-            you. <br /> Simplify workflows, reduce errors, and save time.
+            Que vous soyez une entreprise ou un particulier, La Passerelle vous
+            propose des services sur mesure pour <br /> améliorer votre
+            quotidien et optimiser votre activité.
           </p>
         </div>
         <div className="mb-[36px] flex justify-between items-center mt-[76px] max-md:flex-wrap max-md:justify-center gap-2">

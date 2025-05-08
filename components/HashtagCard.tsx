@@ -1,13 +1,13 @@
-// components/HashtagCard.tsx
 "use client";
 
 import { motion } from "framer-motion";
-import { FaHashtag } from "react-icons/fa";
+import { IconType } from "react-icons";
 
 interface HashtagCardProps {
   color: string;
   title: string;
   description: string;
+  icone: IconType; // icone est un composant, pas un JSX.Element
   index: number;
 }
 
@@ -15,6 +15,7 @@ export const HashtagCard = ({
   color,
   title,
   description,
+  icone: Icon,
   index,
 }: HashtagCardProps) => {
   return (
@@ -28,7 +29,7 @@ export const HashtagCard = ({
       <div
         className={`w-[56px] h-[54px] text-white ${color} flex justify-center items-center rounded`}
       >
-        <FaHashtag />
+        <Icon size={28} />
       </div>
       <h1 className="font-bold text-[#fad41a] text-[20px] my-[32px]">
         {title}

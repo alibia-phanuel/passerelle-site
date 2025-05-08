@@ -39,8 +39,9 @@ const Brand = () => {
             }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            Grow your brand <br className="max-md:hidden" /> presence on social{" "}
-            <br className="max-md:hidden" /> media
+            Développez la présence de votre marque
+            <br className="max-md:hidden" />
+            sur les réseaux <br className="max-md:hidden" /> sociaux
           </motion.h1>
 
           <motion.p
@@ -51,7 +52,9 @@ const Brand = () => {
             }}
             transition={{ delay: 0.3, duration: 0.7 }}
           >
-            Join with more 1200+ happy customers
+            Rejoignez plus de{" "}
+            <span className="font-semibold text-[#fad41a]">1 200</span> clients
+            satisfaits
           </motion.p>
 
           <motion.div
@@ -95,7 +98,7 @@ const Brand = () => {
               }}
               transition={{ delay: 0.7, duration: 0.6 }}
             >
-              and others
+              et autre
             </motion.div>
           </motion.div>
         </div>
@@ -111,7 +114,7 @@ const Brand = () => {
             variant="outline"
             className="py-[18px] text-[#070707] px-[32px] bg-white cursor-pointer mb-[34px]"
           >
-            Get your trial now
+            Essayez gratuitement maintenant
           </Button>
         </motion.div>
       </motion.div>

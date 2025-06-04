@@ -2,9 +2,25 @@
 
 import { HashtagCard } from "@/components/HashtagCard";
 import { hashtagCards } from "@/data/hashtagCards";
+import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 const Performance = () => {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [pathname]);
   return (
-    <div className="bg-[#2121219a] min-h-[70vh] flex justify-center overflow-hidden p-4 ">
+    <div
+      id="projets"
+      className="bg-[#2121219a] min-h-[70vh] flex justify-center overflow-hidden p-4 "
+    >
       <div className="container h-full">
         <div className="mt-[80px] mb-[76px]">
           <h1 className="text-center text-[#fad41a] font-bold text-[36px]">

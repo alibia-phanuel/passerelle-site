@@ -1,5 +1,6 @@
 "use client";
-
+import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -71,6 +72,17 @@ const FooterLinkGroup = ({
 );
 
 const Footer = () => {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [pathname]);
   const year = new Date().getFullYear();
 
   return (

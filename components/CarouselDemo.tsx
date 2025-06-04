@@ -51,7 +51,7 @@ export function CarouselDemo() {
                       }}
                     >
                       <Image
-                        src="/images/pp1.jpg"
+                        src="/images/user.png"
                         alt="avatar"
                         fill
                         className="object-cover"

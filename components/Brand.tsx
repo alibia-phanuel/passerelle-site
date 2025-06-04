@@ -53,7 +53,7 @@ const Brand = () => {
             transition={{ delay: 0.3, duration: 0.7 }}
           >
             Rejoignez plus de{" "}
-            <span className="font-semibold text-[#fad41a]">1 200</span> clients
+            <span className="font-semibold text-[#fad41a]">4 00</span> clients
             satisfaits
           </motion.p>
 

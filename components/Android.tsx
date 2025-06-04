@@ -3,14 +3,29 @@
 import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { CgArrowLongRight } from "react-icons/cg";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 const Android = () => {
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [pathname]);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className="min-h-screen flex justify-center items-center overflow-hidden">
+    <div
+      id="services"
+      className="min-h-screen flex justify-center items-center overflow-hidden"
+    >
       <div
         ref={ref}
         className="h-full gap-2 w-full max-md:flex-wrap flex justify-between items-center container p-4"

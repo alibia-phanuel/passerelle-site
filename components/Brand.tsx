@@ -15,7 +15,7 @@ const Brand = () => {
   ];
 
   return (
-    <div className="min-h-[360px] max-md:h-auto flex justify-center overflow-hidden p-4">
+    <div className="min-h-[360px] mt-20 max-md:h-auto flex justify-center overflow-hidden p-4">
       <motion.div
         className="container px-[91px] rounded-lg flex min-h-[360px] justify-between bg-gradient-to-r from-[#292c2c] to-[#edea24bf] items-center max-md:flex-wrap max-md:flex-col max-md:justify-center"
         initial="hidden"

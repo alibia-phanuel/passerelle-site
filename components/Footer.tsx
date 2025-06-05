@@ -90,7 +90,7 @@ const Footer = () => {
       id="contact"
       className="bg-[#081315] flex justify-center items-center mt-[136px] flex-col px-4"
     >
-      <div className="container w-full flex flex-wrap gap-6 justify-between mt-[128px] mb-[96px]">
+      <div className="container  w-full flex flex-wrap gap-6 justify-between mt-[128px] mb-[96px]">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -98,10 +98,8 @@ const Footer = () => {
           className="min-w-[250px]"
         >
           <Image src="/images/logo.png" width={100} height={100} alt="Logo" />
-          <p className="text-[#D3D6D8] text-[16px] mt-[28px] mb-[32px]">
-            Créez un site Web moderne et créatif avec <br /> Crealand
-          </p>
-          <div className="flex gap-4 flex-wrap">
+
+          <div className="flex gap-4 flex-wrap mt-8">
             {socialLinks.map((social, i) => (
               <Link
                 key={i}
@@ -131,7 +129,7 @@ const Footer = () => {
           <IoMdHeart className="text-[#FFFFFF] text-[24px]" />
         </div>
         <div className="text-[#FFFFFF] text-[16px] font-bold text-center">
-          Copyright © {year}. Créé avec amour.
+          Copyright © {year}.ikouma labs. All rights reserved
         </div>
       </motion.div>
     </div>

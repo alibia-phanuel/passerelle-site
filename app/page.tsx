@@ -6,6 +6,7 @@ import Pc from "@/components/Pc";
 import Performance from "@/components/Performance";
 import Brand from "@/components/Brand";
 import Footer from "@/components/Footer";
+import AppDownload from "@/components/AppDownload";
 export default function Home() {
   return (
     <div>
@@ -14,6 +15,7 @@ export default function Home() {
         <ContentHero />
       </Hero>
       <Android />
+      <AppDownload />
       <Pc />
       <Performance />
       <Brand />

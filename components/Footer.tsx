@@ -2,74 +2,8 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
-import {
-  IoLogoGoogle,
-  IoLogoInstagram,
-  IoLogoLinkedin,
-  IoLogoTwitter,
-  IoMdHeart,
-} from "react-icons/io";
-
-const socialLinks = [
-  { icon: <IoLogoGoogle />, url: "https://www.google.com" },
-  { icon: <IoLogoTwitter />, url: "https://x.com/" },
-  { icon: <IoLogoInstagram />, url: "https://www.instagram.com/" },
-  { icon: <IoLogoLinkedin />, url: "https://ng.linkedin.com/" },
-];
-
-const footerLinks = [
-  {
-    title: "Produit",
-    links: [
-      "Page d'accueil",
-      "Fonctionnalités",
-      "Documentation",
-      "Programme de parrainage",
-      "Tarification",
-    ],
-  },
-  {
-    title: "Services",
-    links: ["Documentation", "Design", "Thèmes", "Illustrations", "UI Kit"],
-  },
-  {
-    title: "Entreprise",
-    links: [
-      "À propos",
-      "Conditions d'utilisation",
-      "Politique de confidentialité",
-      "Carrières",
-    ],
-  },
-  {
-    title: "Plus",
-    links: ["Documentation", "Licence", "Changelog"],
-  },
-];
-
-const FooterLinkGroup = ({
-  title,
-  links,
-}: {
-  title: string;
-  links: string[];
-}) => (
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6 }}
-    className="p-4 flex flex-col gap-2"
-  >
-    <h1 className="font-bold text-[18px] text-white">{title}</h1>
-    {links.map((link: string, index: number) => (
-      <Link key={index} href="/" className="text-[16px] text-[#D3D6D8]">
-        {link}
-      </Link>
-    ))}
-  </motion.div>
-);
+import { IoMdHeart } from "react-icons/io";
+import { FaApple, FaGooglePlay, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   const pathname = usePathname();
@@ -83,53 +17,79 @@ const Footer = () => {
       }
     }
   }, [pathname]);
+
   const year = new Date().getFullYear();
+
+  const links = [
+    {
+      icon: <FaFacebook className="text-white text-[20px]" />,
+      url: "https://www.facebook.com/LaPasserelleProd?mibextid=wwXIfr&rdid=voaLvTRPBrFMFI89&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F17Dc3fBrnW%2F%3Fmibextid%3DwwXIfr",
+    },
+    {
+      icon: <FaFacebook className="text-white text-[20px]" />,
+      url: "https://www.facebook.com/people/Passerelle-Shop/100069916585020/?mibextid=wwXIfr&rdid=U8QisznSG5jEq6SN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19em7u5wgk%2F%3Fmibextid%3DwwXIfr",
+    },
+
+    {
+      icon: <FaApple className="text-white text-[20px]" />,
+      url: "https://apps.apple.com/us/app/la-passerelle/id6742491347",
+    },
+    {
+      icon: <FaGooglePlay className="text-white text-[20px]" />,
+      url: "https://play.google.com/store/apps/details?id=com.ikoumalabs.ikouma_labs",
+    },
+
+    {
+      icon: <FaFacebook className="text-white text-[20px]" />,
+      url: "https://www.facebook.com/people/La-Passerelle-corp/61566527031895/?mibextid=wwXIfr&rdid=VIePexYFD5QNGA2Q&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1Dnadsxjbm%2F%3Fmibextid%3DwwXIfr",
+    },
+    {
+      icon: <FaFacebook className="text-white text-[20px]" />,
+      url: "https://www.facebook.com/people/kiri-Drive/61566175618760/?mibextid=wwXIfr&rdid=TjWdNhRGr97lwsMZ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19a7NHgKM8%2F%3Fmibextid%3DwwXIfr",
+    },
+  ];
 
   return (
     <div
       id="contact"
       className="bg-[#081315] flex justify-center items-center mt-[136px] flex-col px-4"
     >
-      <div className="container  w-full flex flex-wrap gap-6 justify-between mt-[128px] mb-[96px]">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="min-w-[250px]"
-        >
-          <Image src="/images/logo.png" width={100} height={100} alt="Logo" />
-
-          <div className="flex gap-4 flex-wrap mt-8">
-            {socialLinks.map((social, i) => (
-              <Link
-                key={i}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-[40px] h-[40px] rounded-full bg-[#d5e2e45a] flex justify-center items-center text-white"
-              >
-                {social.icon}
-              </Link>
-            ))}
-          </div>
-        </motion.div>
-
-        {footerLinks.map((group, idx) => (
-          <FooterLinkGroup key={idx} title={group.title} links={group.links} />
-        ))}
-      </div>
-
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="w-full flex flex-col items-center gap-4 my-[80px]"
+        className="w-full flex flex-col items-center gap-6 my-[80px]"
       >
+        {/* Icône cœur */}
         <div className="w-[56px] h-[56px] bg-[#cfc31d] rounded-full flex justify-center items-center">
           <IoMdHeart className="text-[#FFFFFF] text-[24px]" />
         </div>
+
+        {/* Liens ajoutés */}
+        <div className="flex gap-4 flex-wrap justify-center">
+          {links.map((item, i) => (
+            <a
+              key={i}
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-[40px] h-[40px] rounded-full bg-[#d5e2e45a] flex justify-center items-center hover:bg-[#cfc31d] transition-colors"
+            >
+              {item.icon}
+            </a>
+          ))}
+        </div>
+
+        {/* Copyright */}
         <div className="text-[#FFFFFF] text-[16px] font-bold text-center">
-          Copyright © {year}.ikouma labs. All rights reserved
+          Copyright © {year}. ikouma labs. All rights reserved |{" "}
+          <a
+            target="_blank"
+            href="https://www.facebook.com/alibia2023"
+            className="text-[#e1b75e] underline"
+          >
+            by alibia
+          </a>
         </div>
       </motion.div>
     </div>

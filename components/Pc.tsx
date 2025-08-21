@@ -3,6 +3,7 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { CgArrowLongRight } from "react-icons/cg";
+import Link from "next/link";
 
 const Pc = () => {
   return (
@@ -84,18 +85,22 @@ const Pc = () => {
               ))}
             </ul>
           </motion.div>
-
-          <motion.p
-            className="flex items-center text-[#fad41a] py-2 gap-2 cursor-pointer max-md:w-full max-md:justify-center"
-            variants={{
-              hidden: { opacity: 0, x: -20 },
-              show: { opacity: 1, x: 0 },
-            }}
-            transition={{ duration: 1, delay: 0.8 }}
+          <Link
+            target="_blank"
+            href="https://www.facebook.com/people/Passerelle-Shop/100069916585020/?mibextid=wwXIfr&rdid=U8QisznSG5jEq6SN&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19em7u5wgk%2F%3Fmibextid%3DwwXIfr"
           >
-            <span>🛍️ Explorer l’e-shop</span>
-            <CgArrowLongRight className="relative top-0.5" />
-          </motion.p>
+            <motion.p
+              className="flex items-center text-[#fad41a] py-2 gap-2 cursor-pointer max-md:w-full max-md:justify-center"
+              variants={{
+                hidden: { opacity: 0, x: -20 },
+                show: { opacity: 1, x: 0 },
+              }}
+              transition={{ duration: 1, delay: 0.8 }}
+            >
+              <span>🛍️ Explorer l’e-shop</span>
+              <CgArrowLongRight className="relative top-0.5" />
+            </motion.p>
+          </Link>
         </motion.div>
 
         {/* Left part: Image */}

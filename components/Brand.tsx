@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 const Brand = () => {
@@ -102,21 +101,6 @@ const Brand = () => {
             </motion.div>
           </motion.div>
         </div>
-
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, scale: 0.9 },
-            show: { opacity: 1, scale: 1 },
-          }}
-          transition={{ delay: 0.9, duration: 0.6 }}
-        >
-          <Button
-            variant="outline"
-            className="py-[18px] text-[#070707] px-[32px] bg-white cursor-pointer mb-[34px]"
-          >
-            Essayez gratuitement maintenant
-          </Button>
-        </motion.div>
       </motion.div>
     </div>
   );

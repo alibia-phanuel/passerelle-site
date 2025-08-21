@@ -3,9 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import { Button } from "@/components/ui/button";
-import { IoIosArrowRoundForward } from "react-icons/io";
-import Link from "next/link";
+
 const ContentHero = () => {
   return (
     <div className="w-full flex justify-center h-full items-center">
@@ -41,26 +39,6 @@ const ContentHero = () => {
             artistique, e-shop, internet haut débit, location de véhicules, et{" "}
             bien plus.
           </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-wrap max-md:gap-2.5 gap-32"
-          >
-            <Button
-              variant="outline"
-              className="py-[18px] px-[36px] text-[#212121]"
-            >
-              Voir comment ça marche
-            </Button>
-            <div className="text-white flex items-center justify-center cursor-pointer">
-              <Link href="/" className="flex items-center justify-center">
-                <p>Obtenez une démo gratuite</p>
-                <IoIosArrowRoundForward className="text-white text-[30px]" />
-              </Link>
-            </div>
-          </motion.div>
         </div>
         <div className="max-lg:hidden absolute right-0 top-0 overflow-hidden  h-full">
           <motion.div

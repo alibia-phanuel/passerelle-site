@@ -135,7 +135,6 @@ const Team = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-[#fad41a]/[0.035] blur-[130px] pointer-events-none" />
 
       <div ref={ref} className="container p-4 w-full relative z-10">
-
         {/* ── Header ── */}
         <motion.div
           className="text-center mb-20"
@@ -269,7 +268,6 @@ const Team = () => {
             </motion.div>
           </div>
         </motion.div>
-
       </div>
     </div>
   );
@@ -351,14 +349,14 @@ const MemberCard = ({
         transition={{ type: "spring", stiffness: 220, damping: 18 }}
       >
         <p
-          className={`font-bold text-white ${
+          className={`font-bold text-[#fad41a] ${
             large ? "text-[18px]" : "text-[15px]"
           }`}
         >
           {member.name}
         </p>
         <motion.p
-          className={`text-[#fad41a] ${large ? "text-sm" : "text-xs"} mt-1`}
+          className={`text-[#a5b4c2] ${large ? "text-sm" : "text-xs"} mt-1`}
           animate={hovered ? { opacity: 1 } : { opacity: 0.7 }}
           transition={{ duration: 0.3 }}
         >

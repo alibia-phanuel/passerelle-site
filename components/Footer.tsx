@@ -85,7 +85,7 @@ const Footer = () => {
           Copyright © {year}. ikouma labs. All rights reserved |{" "}
           <a
             target="_blank"
-            href="https://www.facebook.com/alibia2023"
+            href="https://phanuel-alibia.com/"
             className="text-[#e1b75e] underline"
           >
             by alibia

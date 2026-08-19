@@ -83,12 +83,8 @@ const Footer = () => {
         {/* Copyright */}
         <div className="text-[#FFFFFF] text-[16px] font-bold text-center">
           Copyright © {year}. ikouma labs. All rights reserved |{" "}
-          <a
-            target="_blank"
-            href="https://phanuel-alibia.com/"
-            className="text-[#e1b75e] underline"
-          >
-            by alibia
+          <a href="#" className="text-[#e1b75e] underline">
+            By ikouma labs
           </a>
         </div>
       </motion.div>

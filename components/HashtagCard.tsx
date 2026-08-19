@@ -7,7 +7,7 @@ interface HashtagCardProps {
   color: string;
   title: string;
   description: string;
-  icone: IconType; // icone est un composant, pas un JSX.Element
+  icone: IconType;
   index: number;
 }
 
@@ -24,17 +24,17 @@ export const HashtagCard = ({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.2 }}
       viewport={{ once: true }}
-      className="w-[259px] h-[300px] bg-white p-[28px] rounded-lg shadow-md transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:rotate-1 transform"
+      className="w-full sm:w-[calc(50%-8px)] lg:w-[259px] min-h-[260px] bg-white p-5 sm:p-[28px] rounded-lg shadow-md transition duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 hover:rotate-1 transform"
     >
       <div
         className={`w-[56px] h-[54px] text-white ${color} flex justify-center items-center rounded`}
       >
         <Icon size={28} />
       </div>
-      <h1 className="font-bold text-[#fad41a] text-[20px] my-[32px]">
+      <h1 className="font-bold text-[#fad41a] text-lg sm:text-[20px] my-4 sm:my-[32px]">
         {title}
       </h1>
-      <p className="text-[15px] text-[#8EA9C1] whitespace-pre-line">
+      <p className="text-sm sm:text-[15px] text-[#8EA9C1] whitespace-pre-line">
         {description}
       </p>
     </motion.div>
